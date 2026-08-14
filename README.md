@@ -48,9 +48,9 @@ The player runs entirely in the browser — all rendering, data processing, and 
 
 ## Hardware Recommendation
 
-[**ESP32-S3 N16R8**](https://github.com/nasp2000/Node32-HUB) — any generic devkit with 8 MB PSRAM.
+[**ESP32-S3 CAM**](https://github.com/nasp2000/Node32-HUB) — with onboard micro SD card slot.
 
-The only tested class of board. Pair it with a **UDA1334A I2S DAC** amplifier module and a micro SD card for the music library.
+The only tested class of board. Pair it with a **UDA1334A I2S DAC** amplifier module. Without the micro SD card the player still works — music plays via PSRAM (no SD playback).
 
 ---
 
