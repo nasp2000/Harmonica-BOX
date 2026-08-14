@@ -42,6 +42,7 @@ The player runs entirely in the browser — all rendering, data processing, and 
 - **Library** tab for SD card music files
 - **Playlist** tab to manage saved playlists
 - Stream URL entry for direct playback
+- **Alarm clock** — weekly schedule slots that auto-play a source at a chosen time and stop later (days, start/end time, source, volume)
 
 ### Reliability
 - Watchdog timer and crash recovery
@@ -63,7 +64,7 @@ The only tested class of board. Pair it with a **UDA1334A I2S DAC** amplifier mo
 
 1. Flash the pre-built binary to your ESP32-S3 N16R8 (binaries in Releases) using [webflasher_Node32-HUB](https://github.com/nasp2000/webflasher_Node32-HUB). For future updates use **OTA** at `http://<esp32-ip>/ota`
 2. Connect the **UDA1334A I2S DAC** to your amplifier/speakers
-3. Open `http://<esp32-ip>` in a browser and go to **Radio**
+3. Open `http://harmonica-box.local` in a browser (mDNS) or `http://<esp32-ip>` and go to **Radio**
 4. Play a stream URL or a station from **Discover Radios**
 
 ---
@@ -76,7 +77,7 @@ The only tested class of board. Pair it with a **UDA1334A I2S DAC** amplifier mo
 4. Browse to `http://192.168.4.1`
 5. Login with user **root** / password **root**
 6. Go to **Settings → Wi-Fi** and connect to your local network
-7. Once connected, the AP turns off automatically and the device is reachable at the assigned IP
+7. Once connected, the AP turns off automatically and the device is reachable at `http://harmonica-box.local` (mDNS) or the assigned IP
 
 > If the device loses connection to the Wi-Fi network, it reactivates AP mode automatically.
 
