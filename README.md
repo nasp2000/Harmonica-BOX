@@ -58,7 +58,7 @@ The player runs entirely in the browser — all rendering, data processing, and 
 
 [**ESP32-S3 CAM N16R8**](https://www.aliexpress.com/w/wholesale-esp32-s3-cam-n16r8.html) — with onboard micro SD card slot.
 
-The only tested class of board. Pair it with a **UDA1334A I2S DAC** amplifier module. Without the micro SD card the player still works — music plays via PSRAM (no SD playback).
+The only tested class of board. Pair it with a [**UDA1334A I2S DAC**](https://www.aliexpress.com/w/wholesale-uda1334a-i2s-dac.html) amplifier module. Without the micro SD card the player still works — music plays via PSRAM (no SD playback).
 
 ### Wiring (UDA1334A I2S DAC)
 
