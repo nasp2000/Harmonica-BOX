@@ -10,6 +10,7 @@ Streams internet radio and MP3 files through a **UDA1334A I2S DAC** amplifier, w
   <img src="image/radio.jpg" width="220" alt="Harmonica Box web UI">
   <img src="image/stream.jpg" width="220" alt="Streaming playback">
   <img src="image/discover_radios.jpg" width="220" alt="Discover Radios">
+  <img src="image/upnp_client.jpg" width="220" alt="UPnP client">
 </p>
 
 📷 [More screenshots](image/)
