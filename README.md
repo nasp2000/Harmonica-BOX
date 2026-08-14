@@ -58,6 +58,27 @@ The player runs entirely in the browser — all rendering, data processing, and 
 
 The only tested class of board. Pair it with a **UDA1334A I2S DAC** amplifier module. Without the micro SD card the player still works — music plays via PSRAM (no SD playback).
 
+### Wiring (UDA1334A I2S DAC)
+
+```
+ESP32-S3 N16R8          UDA1334A              Amplifier/Speakers
+─────────────────       ─────────────         ──────────────────
+3.3V                ───  VIN
+GND                 ───  GND
+GPIO41 (BCLK)       ───  BCLK
+GPIO42 (WSEL/LRCK)  ───  WSEL
+GPIO19 (DIN)        ───  DIN
+GPIO1  (MUTE)       ───  MUTE   (optional, LOW = audio active)
+                    LOUT ───────────────────  AUX IN L
+                    ROUT ───────────────────  AUX IN R
+                    GND  ───────────────────  AUX GND
+SMT                 ───  GND   (de-emphasis off)
+SF0                 ───  GND   (I2S format, 00)
+SF1                 ───  GND
+```
+
+> MCLK is not connected — the module derives the clock from BCLK internally. The micro SD card (onboard TF slot) uses SDMMC 1-bit (CMD=38, CLK=39, D0=40) and is handled automatically.
+
 ---
 
 ## Quick start
