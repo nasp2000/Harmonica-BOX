@@ -6,12 +6,14 @@
 
 Streams internet radio and MP3 files through a **UDA1334A I2S DAC** amplifier, with online station discovery, favorites, playlists, UPnP client, and a full-screen web player. The player runs entirely in the browser — zero server load, the ESP32 only decodes and streams audio.
 
-<div style="display:flex;gap:6px;flex-wrap:wrap">
-  <img src="image/radio.jpg" width="210" alt="Harmonica Box web UI">
-  <img src="image/stream.jpg" width="210" alt="Streaming playback">
-  <img src="image/discover_radios.jpg" width="210" alt="Discover Radios">
-  <img src="image/upnp_client.jpg" width="210" alt="UPnP client">
-</div>
+<table>
+  <tr>
+    <td><img src="image/radio.jpg" width="180" alt="Harmonica Box web UI"></td>
+    <td><img src="image/stream.jpg" width="180" alt="Streaming playback"></td>
+    <td><img src="image/discover_radios.jpg" width="180" alt="Discover Radios"></td>
+    <td><img src="image/upnp_client.jpg" width="180" alt="UPnP client"></td>
+  </tr>
+</table>
 
 📷 [More screenshots](image/)
 
